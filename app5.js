@@ -53,14 +53,13 @@ app.get("/janken", (req, res) => {
 
   if( hand == cpu ){
     judgement = 'あいこ';
-    total += 1;
+  
   }else if( (hand == 'グー' && cpu == 'チョキ') || (hand == 'チョキ' && cpu == 'パー') || (hand == 'パー' && cpu == 'グー') ){
     judgement = '勝ち';
-    win += 1;
-    total += 1;
+    
   }else{
     judgement = '負け';
-    total += 1;
+    
   }
   
   const display = {
