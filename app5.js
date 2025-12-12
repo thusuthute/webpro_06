@@ -118,4 +118,15 @@ app.get("/keiyo2/:number", (req, res) => {
   res.render('keiyo2_detail', {data: detail} );
 });
 
+let example = [
+  { id:1, name:"足し算", example:"1 + 2 = 3" },
+  { id:2, name:"引き算", example:"2 - 1 = 1" },
+  { id:3, name:"掛け算", example:"1 * 2 = 2" },
+  { id:4, name:"割り算", example:"2 / 1 = 2" },
+]
+
+app.get("/maze", (req, res) => {
+  res.render('maze', {data: example});
+})
+
 app.listen(8080, () => console.log("Example app listening on port 8080!"));

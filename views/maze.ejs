@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>計算迷路</title>
+</head>
+<body>
+  <h2>計算迷路</h2>
+  <table>
+    <tr><th>ID</th><th>駅コード</th><th>駅名</th></tr>
+      <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr><td><a href="/maze/<%= number %>"></a><%= row.name %></a></td>
+        <td><%= row.example %></td></tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+</body>
+</html>
