@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>家計簿</title>
+</head>
+<body>
+    <h2>家計簿の追加</h2>
+    <form action="/record" method="POST">
+        <label for="year">年度:</label>
+        <input type="text" name="year" required><br>
+        <label for="date">日にち:</label>
+        <input type="text" name="date" required><br>
+        <label for="income">収入:</label>
+        <input type="text" name="income"><br>
+        <label for="expenditure">支出:</label>
+        <input type="text" name="expenditure" required><br>
+        <label for="comment">一言:</label>
+        <input type="text" name="comment" required><br>
+        <input type="submit" values="登録">
+    </form>
+</body>
+</html>

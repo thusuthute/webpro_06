@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>家計簿</title>
+</head>
+<body>
+  <h2>家計簿の詳細</h2>
+  <table>
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>年度</td><td><%= data.year %></td></tr>
+    <tr><td>日にち</td><td><%= data.date %></td></tr>
+    <tr><td>収入</td><td><%= data.income %></td></tr>
+    <tr><td>支出</td><td><%= data.expenditure %></td></tr>
+    <tr><td>一言</td><td><%= data.comment %></td></tr>
+  </table>
+  <a href="/record/edit/<%= id %>">編集</a>
+  <a href="/record/delete/<%= id %>">削除</a>
+  <a href="/record">日付一覧に戻る</a>
+</body>
+</html>

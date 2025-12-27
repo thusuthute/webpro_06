@@ -2,20 +2,20 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>京葉線の駅</title>
+  <title>売上管理</title>
 </head>
 <body>
-  <h2>京葉線の駅の詳細</h2>
+  <h2>売上管理の一覧</h2>
   <table>
-    <tr><th>ID</th><th>駅コード</th><th>駅名</th></tr>
+    <tr><th>ID</th><th>JANコード</th><th>商品名</th></tr>
       <% let number = 0 %>
       <% for( let row of data ) { %>
         <tr><td><%= row.id %></td>
         <td><%= row.code %></td>
-        <td><a href="/keiyo2/<%= number %>"><%= row.name %></a></td></tr>
+        <td><a href="/management/<%= number %>"><%= row.name %></a></td></tr>
         <% number += 1 %>
       <% } %>
   </table>
-  <a href="/keiyo2/create">追加</a>
+  <a href="/management/create">追加</a>
 </body>
 </html>

@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>家計簿</title>
+</head>
+<body>
+  <h2>家計簿の編集</h2>
+  <form action="/record/update/<%= data.id - 1 %>" method="POST">
+    <table>
+      <tr><th>項目</th><th>データ</th></tr>
+      <tr><td>年度</td><td><input type="text" name="year" value="<%= data.year %>"></td></tr>
+      <tr><td>日にち</td><td><input type="text" name="date" value="<%= data.date %>"></td></tr>
+      <tr><td>収入</td><td><input type="text" name="income" value="<%= data.income %>"></td></tr>
+      <tr><td>支出</td><td><input type="text" name="expenditure" value="<%= data.expenditure %>"></td></tr>
+      <tr><td>一言</td><td><input type="text" name="comment" value="<%= data.comment %>"></td></tr>
+    </table>
+    <input type="submit" values="登録">
+  </form>
+  <a href="/record/">日付一覧に戻る</a>
+</body>
+</html>

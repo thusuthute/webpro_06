@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>時間割</title>
+</head>
+<body>
+    <h2>時間割の追加</h2>
+    <form action="/time" method="POST">
+        <label for="day">曜日:</label>
+        <input type="text" name="day" required><br>
+        <label for="subject">科目名:</label>
+        <input type="text" name="subject" required><br>
+        <label for="start">開始時刻:</label>
+        <input type="text" name="start"><br>
+        <label for="end">終了時刻:</label>
+        <input type="text" name="end" required><br>
+        <label for="test">試験日:</label>
+        <input type="text" name="test" required><br>
+        <input type="submit" values="登録">
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>売上管理</title>
+</head>
+<body>
+  <h2>売上管理の詳細</h2>
+  <table>
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>JANコード</td><td><%= data.code %></td></tr>
+    <tr><td>商品名</td><td><%= data.name %></td></tr>
+    <tr><td>種類</td><td><%= data.type %></td></tr>
+    <tr><td>値段</td><td><%= data.value %></td></tr>
+    <tr><td>売上個数</td><td><%= data.quantity %></td></tr>
+  </table>
+  <a href="/management/edit/<%= id %>">編集</a>
+  <a href="/management/delete/<%= id %>">削除</a>
+  <a href="/management">商品一覧に戻る</a>
+</body>
+</html>

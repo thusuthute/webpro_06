@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>登録</title>
+</head>
+<body>
+    <h2>売上管理の追加</h2>
+    <form action="/management" method="POST">
+        <label for="code">JANコード:</label>
+        <input type="text" name="code" required><br>
+        <label for="name">商品名:</label>
+        <input type="text" name="name" required><br>
+        <label for="type">種類:</label>
+        <input type="text" name="type"><br>
+        <label for="value">値段:</label>
+        <input type="text" name="value" required><br>
+        <label for="quantity">売上個数:</label>
+        <input type="text" name="quantity" required><br>
+        <input type="submit" values="登録">
+    </form>
+</body>
+</html>
