@@ -15,7 +15,7 @@ let management = [
   { id:3, code:"4902102072618", name:"コカ・コーラ 500mlペットボトル", type:"飲み物", value:150, quantity:20000 },
   { id:4, code:"4901330578923", name:"じゃがりこ じゃがバター ", type:"お菓子", value:200,quantity:0 },
   { id:5, code:"4901330578909", name:"じゃがりこ サラダ", type:"お菓子", value:200, quantity:10000 },
-  { id:6, code:"4901170002619", name:"千ガリガリ君 ソーダ駅", type:"アイス", value:80, quantity:123456 },
+  { id:6, code:"4901170002619", name:"ガリガリ君 ソーダ味", type:"アイス", value:80, quantity:123456 },
   { id:7, code:"4901113101539", name:"ケロッグ コーンフレーク (180g)", type:"シリアル", value:500, quantity:4000 },
 ];
 
